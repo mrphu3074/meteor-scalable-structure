@@ -1,26 +1,27 @@
 /
 |_package.json
 |_app
-    |__public
-        |   |__img
-            |   |__fonts
-                |   |__...
-                    |
-                        |__packages
-                                |
-                                        |_package-name
-                                                    |__package.js
-                                                                |__README
-                                                                            |__lib
-                                                                                            |__both
-                                                                                                                |__routes.coffee-js
-                                                                                                                                    |__config.coffee-js
-                                                                                                                                                        |__namespace.coffee-js
-                                                                                                                                                                        |__server
-                                                                                                                                                                                            |__publish.coffee-js
-                                                                                                                                                                                                                |__methods.coffee-js
-                                                                                                                                                                                                                                |__client
-                                                                                                                                                                                                                                                    |_view-name
-                                                                                                                                                                                                                                                                            |__view.coffee-js
-                                                                                                                                                                                                                                                                                                    |__view.html
-                                                                                                                                                                                                                                                                                                                            |__view.css-sass-less
+|___|__public
+|___|__img
+|___|____|__fonts
+|___|____|__...
+|___|
+|___|__packages
+|_______|
+|_______|_package-name
+|___________|__package.js
+|___________|__README
+|___________|__lib
+|_______________|__both
+|_______________|___|__routes.coffee-js
+|_______________|___|__config.coffee-js
+|_______________|___|__namespace.coffee-js
+|_______________|__server
+|_______________|___|__publish.coffee-js
+|_______________|___|__methods.coffee-js
+|_______________|__client
+|_______________|___|_view-name
+|_______________________|__view.coffee-js
+|_______________________|__view.html
+|_______________________|__view.css-sass-less
+

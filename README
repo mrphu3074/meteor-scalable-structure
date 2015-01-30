@@ -1,0 +1,26 @@
+/
+|_package.json
+|_app
+    |__public
+        |   |__img
+            |   |__fonts
+                |   |__...
+                    |
+                        |__packages
+                                |
+                                        |_package-name
+                                                    |__package.js
+                                                                |__README
+                                                                            |__lib
+                                                                                            |__both
+                                                                                                                |__routes.coffee-js
+                                                                                                                                    |__config.coffee-js
+                                                                                                                                                        |__namespace.coffee-js
+                                                                                                                                                                        |__server
+                                                                                                                                                                                            |__publish.coffee-js
+                                                                                                                                                                                                                |__methods.coffee-js
+                                                                                                                                                                                                                                |__client
+                                                                                                                                                                                                                                                    |_view-name
+                                                                                                                                                                                                                                                                            |__view.coffee-js
+                                                                                                                                                                                                                                                                                                    |__view.html
+                                                                                                                                                                                                                                                                                                                            |__view.css-sass-less

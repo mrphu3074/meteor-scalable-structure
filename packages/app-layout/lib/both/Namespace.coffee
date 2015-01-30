@@ -1,0 +1,3 @@
+@LayoutManager =
+    TopNav: []
+    SideBar: []

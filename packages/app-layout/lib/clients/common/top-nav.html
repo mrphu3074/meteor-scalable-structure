@@ -1,0 +1,10 @@
+<template name="TopNav">
+    <div class="ui menu">
+        {{#each getItems}}
+            <a class="item" href="{{pathFor path}}">{{title}}</a>
+        {{/each}}
+        <div class="item right">
+            {{> loginButtons}}
+        </div>
+    </div>
+</template>

@@ -1,27 +1,56 @@
-/
-|_package.json
-|_app
-|___|__public
-|___|__img
-|___|____|__fonts
-|___|____|__...
-|___|
-|___|__packages
-|_______|
-|_______|_package-name
-|___________|__package.js
-|___________|__README
-|___________|__lib
-|_______________|__both
-|_______________|___|__routes.coffee-js
-|_______________|___|__config.coffee-js
-|_______________|___|__namespace.coffee-js
-|_______________|__server
-|_______________|___|__publish.coffee-js
-|_______________|___|__methods.coffee-js
-|_______________|__client
-|_______________|___|_view-name
-|_______________________|__view.coffee-js
-|_______________________|__view.html
-|_______________________|__view.css-sass-less
+This is meteor app structure that i using for all my meteor projects.
+-------------------------------------------------------------
 
+.\ APP
+├── packages
+│   └── packageName
+│       ├── namespace.js
+│       ├── package.js
+│       └── src
+│           ├── both
+│           │   ├── collections
+│           │   ├── routes
+│           │   ├── schemas
+│           │   └── utils
+│           ├── client
+│           │   ├── startup.js
+│           │   └── templates
+│           │       ├── layouts
+│           │       │   ├── main.html
+│           │       │   └── main.js
+│           │       ├── shared
+│           │       │   ├── footer.html
+│           │       │   ├── footer.js
+│           │       │   ├── header.html
+│           │       │   └── header.js
+│           │       └── viewName
+│           │           ├── viewName.css
+│           │           ├── viewName.html
+│           │           └── viewName.js
+│           └── server
+│               ├── methods.js
+│               ├── publications.js
+│               └── startup.js
+└── public
+    ├── assets
+    │   ├── fonts
+    │   └── img
+    └── uploaded
+
+-------------------------------------------------------------
+There are 2 root folders:
+- public : where you place public-facing files like images, favicons, and a robots.txt file. It means: all things that you want to use in URL after
+first slash. EX: domain.com/[all things in public folder can access here]
+
+- packages: Meteor have 2 package types:
+   + global package: such as iron:router, accounts-password,....
+   + local package: User define and store in this folder
+
+Each feature in application can be a package (local package)
+For example:
+ - package: posts -> to contains all post's features:
+              + frontend: post details, list posts
+              + backend: CRUD,...
+
+I will create sample app to demonstrate my structure.
+Sorry about my English skills. (^_^)
